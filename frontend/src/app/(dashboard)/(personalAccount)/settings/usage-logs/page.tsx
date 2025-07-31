@@ -4,7 +4,7 @@ import UsageLogs from '@/components/billing/usage-logs';
 export default async function UsageLogsPage() {
   const supabaseClient = await createClient();
   const { data: personalAccount } = await supabaseClient.rpc(
-    'get_personal_account',
+    'get_personal_account'
   );
 
   return (

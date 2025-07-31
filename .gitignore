@@ -56,6 +56,9 @@ cover/
 *.mo
 *.pot
 
+# Environment variable
+.env.local
+
 # Django stuff:
 *.log
 local_settings.py
@@ -205,3 +208,4 @@ dump.rdb
 
 # CodeWebChat state and logs (auto-added)
 .cwc/
+.vercel

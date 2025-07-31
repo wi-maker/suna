@@ -1,10 +1,12 @@
 import EditPersonalAccountName from '@/components/basejump/edit-personal-account-name';
 import { createClient } from '@/lib/supabase/server';
 
+export const dynamic = "force-dynamic";
+
 export default async function PersonalAccountSettingsPage() {
   const supabaseClient = await createClient();
   const { data: personalAccount } = await supabaseClient.rpc(
-    'get_personal_account',
+    'get_personal_account'
   );
 
   return (
